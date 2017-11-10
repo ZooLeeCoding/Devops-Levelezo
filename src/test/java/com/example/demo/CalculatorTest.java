@@ -14,7 +14,7 @@ public class CalculatorTest {
 
     @Test
     public void testDiv() {
-        assertEquals(8, calculator.sum(16,2));
-        assertEquals(5, calculator.sum(25,5));
+        assertEquals(8, calculator.div(16,2));
+        assertEquals(5, calculator.div(25,5));
     }
 }
