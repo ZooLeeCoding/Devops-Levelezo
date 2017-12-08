@@ -33,6 +33,11 @@ pipeline {
                 sh './acceptance_test.sh'
             }
         }
+        stage("Deploy to Production") {
+			steps {
+			    sh "ansible-playbook playbook.yml -i inventory/production"
+			}
+		}
     }
     post {
         always {
